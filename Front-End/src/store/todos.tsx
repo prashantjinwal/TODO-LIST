@@ -1,3 +1,4 @@
+/* eslint-disable prefer-const */
 import { ReactNode, createContext, useContext, useState } from "react";
 // import { json } from "react-router-dom";
 
@@ -64,7 +65,7 @@ export const TodosProvider = ({children}:TodosProvderprops) => {
             })
         }
 
-        // delete the indivisual data
+    
         const handleDeleteTodo = (id:string) => {
             setTodo((prev) => {
                 let newTodos = prev.filter((filterTodo) => filterTodo.id !== id);
